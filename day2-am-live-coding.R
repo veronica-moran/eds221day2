@@ -21,18 +21,17 @@ rpois(5, lambda = 10)
 # Lambda - parameter that describes the distribution
 
 # Doubles (i.e decimals)
+#double()
 
 double(5)
 
-# c() (COME BACK TO THIS)
+# c()
 
 c(1, 2, -1)
 
 # seq () function can produce doubles
-
+seq(1, 5, by = 0.9)
 seq(1, 5, length.out = 4)
-
-seq(1, 5, by = 9)
 
 
 # Random numbers
@@ -56,12 +55,14 @@ c("R", "Python", "SQL")
 
 c(R, Python, SQL)
 
-# Without quotes R interprets these as Characters
+# Without quotes R interprets these as variables
 
 # What is the type of this vector
 
 c("1", "2", "3")
 
+
+#Logical
 c(True, Falce)
 
 
@@ -76,13 +77,11 @@ c(TRUE, FALSE)
 
 5 > 3:6
 
+"R" == "Python"
 # Predicates ( any function that returns logic)
 
 3:6 > 2
-
-
 all(3:6 > 2)
 
 5:10 > 7
-
 any(5:10 > 7)
