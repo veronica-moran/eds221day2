@@ -25,6 +25,7 @@ coral_cover_pct[c(1, length(coral_cover_pct))]
 # Out of order works too
 
 coral_cover_pct[9:8]
+coral_cover_pct[c(8, 8, 8)]
 
 # Negative Integers
 
@@ -38,8 +39,6 @@ coral_cover_pct[-(2:length(coral_cover_pct))]
 #Oh no a bug
 coral_cover_pct[-1, 2]
 #goes from -1, 0, 1, 2 --Can't index with negative, 0 and positive numbers all at the same time
-coral_cover_pct[-(1:2)]
-
 
 # Names
 
@@ -48,6 +47,8 @@ n_observations["Porites"]
 n_observations["Porites", "Pocillopora"]
 # doesnt work because it only apples it to one vector need to use c() so it applies to all
 
+# Names
+n_observations["Porites"]
 n_observations[c("Porites", "Pocillopora")]
 
 
@@ -73,6 +74,7 @@ simple_matrix[3, 4]
 # Entire rows, colums, with_blanks_
 
 simple_matrix[2, ]
+
 simple_matrix[, 2]
 #Index a submatrix
 
@@ -111,3 +113,5 @@ songbird_survey$species
 # to get rows:
 songbird_survey[1, ]
 songbird_survey[1:2, ]
+
+#
